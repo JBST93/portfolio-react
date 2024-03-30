@@ -13,7 +13,7 @@ function App() {
       <h1 className="text-left pb-3">Tools</h1>
       <Skills />
       <section>
-        <h1 className="text-left my-3">Selected Projects</h1>
+        <h1 className="text-left my-3">Projects</h1>
         <Project />
       </section>
 

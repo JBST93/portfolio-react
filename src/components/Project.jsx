@@ -1,20 +1,23 @@
 export default function Project(props) {
   return (
-    <div className="border-solid border-2 border-slate-500 p-2 my-5">
+    <div className="border-solid border-2 border-slate-500 my-5 relative">
       <div className="flex items-center justify-center">
-        <img src="https://uk.tinderpressroom.com/image/Product+Image.png" />
+        <img
+          className="content-contain p-0 m-0"
+          src="https://uk.tinderpressroom.com/image/Product+Image.png"
+        />
       </div>
-      <div className="flex flex-row justify-between items-center">
-        <h1>What To Do</h1>
+      <div className="flex flex-row justify-between items-center pt-2 pl-2">
+        <h1 className="text-xl font-bold">What To Do</h1>
         <h2 className="bg-teal-900 text-teal-300 rounded-l-lg px-3">
           March 2024
         </h2>
       </div>
-      <p className="text-left pb-5">
+      <p className="text-left py-5 px-2">
         Tinder like application designed to simplify the process of finding and
         planning activities tailored to user preferences
       </p>
-      <div>
+      <div className="absolute top-2 left-2">
         <ul className="flex flex-row gap-4 items-center">
           <li className="bg-teal-900 text-teal-300 px-2 rounded-lg">
             Ruby on Rails

@@ -54,7 +54,7 @@ export default function Skills() {
             key={skill.image}
             className="relative"
           >
-            <div className="flex flex-col items-center justify-center border-2 border-slate-500 border-solid bg-zinc-700 overflow-hidden rounded-lg p-4">
+            <div className="flex flex-col items-center justify-center border-2 border-slate-500 border-solid dark:bg-zinc-700 overflow-hidden rounded-lg p-4">
               <img
                 className="object-contain w-16 h-16 mb-2" // Adjust image size and margin bottom
                 src={skill.image}
