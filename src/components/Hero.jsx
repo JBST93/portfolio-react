@@ -11,8 +11,8 @@ export default function Hero() {
     );
   };
 
-  const gridWidth = 15;
-  const gridHeight = 15;
+  const gridWidth = 20;
+  const gridHeight = 4;
 
   function DotGrid() {
     function handleDotClick(event) {
@@ -71,36 +71,45 @@ export default function Hero() {
 
   return (
     <>
-      <div className="flex">
-        <div className="flex-col">
-          <h1 className="text-3xl">Hi, I am Jacek!</h1>
-          <h2 className="text-3xl">Full stack developer.</h2>
-          <p>
-            I'm a full-stack developer that just graduated from Le Wagon. This
-            site will be used to write about code, design, and more.
+      <div className="text-left md:grid md:grid-cols-2 md:text-left md:relative">
+        <div className="hero-headline">
+          <h1 className="text-3xl p-0 m-0 font-bold">
+            Welcome! I am Jacek! 👋
+          </h1>
+          <h2 className="text-2xl p-0 m-0">Full Stack Developer</h2>
+          <p className="mt-5 text-left">
+            I recently completed Le Wagon full-time bootcamp, I am pleased to
+            explore a new path.
           </p>
-        </div>
+          <p className="pt-4">
+            Previously, I held position as business strategy manager at
+            bitFlyer, Japan's leading cryptocurrency exchange. In this role, I
+            oversaw strategic initiatives, driving product development and
+            innovation
+          </p>
 
-        {/* Linkedin, Github, Twitter  */}
-        <div className="flex-col">
+          <p className="pt-4">
+            Today, I am deeply engaged in developing my skills and provide
+            meaningful solution and intersection between business and tech
+          </p>
+
+          <div className="flex flex-row gap-4 my-4 md:absolute md:bottom-0 justify-center">
+            <Button
+              logo="https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg"
+              href="https://www.linkedin.com/in/bastinjacek/"
+            />
+            <Button logo="https://cdn.worldvectorlogo.com/logos/github-icon-2.svg" />
+            <Button logo="https://cdn.worldvectorlogo.com/logos/twitter-3.svg" />
+          </div>
+        </div>
+        <div className="hero-waves justify-center py-5 md:py-0">
           <DotGrid />
         </div>
-        <script src="anime.min.js"></script>
       </div>
-      <div className="flex justify-center gap-5">
-        <Button
-          name="LinkedIn"
-          logo="https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg"
-        />
-        <Button
-          name="Github"
-          logo="https://cdn.worldvectorlogo.com/logos/github-icon-2.svg"
-        />
-        <Button
-          name="Twitter"
-          logo="https://cdn.worldvectorlogo.com/logos/twitter-3.svg"
-        />
-      </div>
+
+      <div className="flex justify-center gap-5 absolute bottom-0"></div>
+
+      <script src="anime.min.js"></script>
     </>
   );
 }

@@ -9,7 +9,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #0f172a;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -72,8 +72,12 @@ button:focus-visible {
 }
 
 .skills-section {
-  display: flex;
-  gap: 50px;
+  display: grid;
+  grid-template-columns: repeat(
+    3,
+    1fr
+  ); /* Adjust the number of columns as needed */
+  gap: 1rem; /* Adjust the gap between grid items */
 }
 
 .skill-image {
