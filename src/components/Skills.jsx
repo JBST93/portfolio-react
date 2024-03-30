@@ -52,21 +52,20 @@ export default function Skills() {
         return (
           <div
             key={skill.image}
-            className="grid grid-cols-3 gap-5 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-8"
+            className="relative"
           >
-            <div className="flex flex-col item-center justify-center border-2 border-slate-500 border-solid bg-zinc-700  overflow-hidden w-32">
+            <div className="flex flex-col items-center justify-center border-2 border-slate-500 border-solid bg-zinc-700 overflow-hidden rounded-lg p-4">
               <img
-                className="object-contain max-w-full max-h-full"
+                className="object-contain w-16 h-16 mb-2" // Adjust image size and margin bottom
                 src={skill.image}
                 alt={skill.name}
               />
-              <div className="flex-grow"></div>
-              <p className="justify-end">{skill.name}</p>
+              <p className="text-xs text-center">{skill.name}</p>{' '}
+              {/* Adjust text size and alignment */}
             </div>
           </div>
         );
       })}
-      ;
     </div>
   );
 }
