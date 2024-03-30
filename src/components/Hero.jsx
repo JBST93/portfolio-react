@@ -97,7 +97,10 @@ export default function Hero() {
               logo="https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg"
               href="https://www.linkedin.com/in/bastinjacek/"
             />
-            <Button logo="https://cdn.worldvectorlogo.com/logos/github-icon-2.svg" />
+            <Button
+              logo="https://cdn.worldvectorlogo.com/logos/github-icon-2.svg"
+              href="https://github.com/JBST93"
+            />
             <Button logo="https://cdn.worldvectorlogo.com/logos/twitter-3.svg" />
           </div>
         </div>

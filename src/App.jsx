@@ -16,8 +16,7 @@ function App() {
       <Skills />
       <section>
         <h1 className="text-left my-3">Selected Projects</h1>
-        <Project name="What To Do" />
-        <Project name="What To Do" />
+        <Project />
       </section>
 
       <section>
