@@ -92,7 +92,7 @@ export default function Hero() {
             meaningful solution and intersection between business and tech
           </p>
 
-          <div className="flex flex-row gap-4 my-4 md:absolute md:bottom-0 justify-center">
+          <div className="flex flex-row gap-4 my-4 justify-center">
             <Button
               logo="https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg"
               href="https://www.linkedin.com/in/bastinjacek/"
@@ -103,9 +103,6 @@ export default function Hero() {
             />
             <Button logo="https://cdn.worldvectorlogo.com/logos/twitter-3.svg" />
           </div>
-        </div>
-        <div className="hero-waves justify-center py-5 md:py-0">
-          <DotGrid />
         </div>
       </div>
 
