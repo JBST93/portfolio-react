@@ -7,7 +7,7 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
+  color-scheme: dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #0f172a;
 
@@ -30,7 +30,7 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 320px;
+  max-width: 100vh;
   min-height: 100vh;
 }
 
@@ -69,25 +69,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
-
-.skills-section {
-  display: grid;
-  grid-template-columns: repeat(
-    3,
-    1fr
-  ); /* Adjust the number of columns as needed */
-  gap: 1rem; /* Adjust the gap between grid items */
-}
-
-.skill-image {
-  width: 60px;
-}
-
-.hero {
-  height: 70vh;
-}
-
-.skill-item {
-  gap: 5px;
 }

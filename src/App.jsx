@@ -8,10 +8,8 @@ import About from './components/About.jsx';
 function App() {
   return (
     <div>
-      <div className="bg-black">
-        <Navbar />
-        <Hero />
-      </div>
+      <Navbar />
+      <Hero />
       <h1 className="text-left pb-3">Tools</h1>
       <Skills />
       <section>
