@@ -1,4 +1,3 @@
-import React from 'react';
 import Button from './Button';
 import anime from 'animejs/lib/anime.js';
 
@@ -71,9 +70,9 @@ export default function Hero() {
 
   return (
     <>
-      <div className="text-left md:grid md:grid-cols-2 md:text-left md:relative">
+      <div className=" mt-5 text-left md:grid md:grid-cols-2 md:text-left md:relative">
         <div className="hero-headline">
-          <h1 className="text-3xl p-0 m-0 font-bold">
+          <h1 className="text-3xl p-0 m-0 font-bold pb-2">
             Welcome! I am Jacek! 👋
           </h1>
           <h2 className="text-2xl p-0 m-0">Full Stack Developer</h2>
