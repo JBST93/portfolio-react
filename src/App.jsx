@@ -10,7 +10,7 @@ function App() {
     <div>
       <Navbar />
       <Hero />
-      <h1 className="text-left pb-3">Tools</h1>
+      <h1 className="text-left pb-3">Skills</h1>
       <Skills />
       <section>
         <h1 className="text-left my-3">Projects</h1>

@@ -11,7 +11,7 @@ export default function Skills() {
         'https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png',
     },
     {
-      name: 'Tailwind',
+      name: 'Tailwind CSS',
       image: 'https://www.loopple.com/img/tailwind-logo.png',
     },
     {
@@ -44,23 +44,28 @@ export default function Skills() {
       image:
         'https://miro.medium.com/v2/resize:fit:800/1*v2vdfKqD4MtmTSgNP0o5cg.png',
     },
+    {
+      name: 'Bootstrap',
+      image:
+        'https://cdn.freebiesupply.com/logos/large/2x/bootstrap-4-logo-svg-vector.svg',
+    },
   ];
 
   return (
-    <div className="grid grid-cols-3 gap-5 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-8">
+    <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4">
       {skills.map((skill) => {
         return (
           <div
             key={skill.image}
-            className="relative"
+            className="w-full"
           >
-            <div className="flex flex-col items-center justify-center border-2 border-slate-500 border-solid dark:bg-zinc-700 overflow-hidden rounded-lg p-4">
+            <div className="flex flex-row items-center border-2 dark:border-slate-700 border-solid dark:bg-zinc-800 overflow-hidden rounded-lg p-2">
               <img
-                className="object-contain w-16 h-16 mb-2" // Adjust image size and margin bottom
+                className="object-contain size-6" // Adjust image size and margin bottom
                 src={skill.image}
                 alt={skill.name}
               />
-              <p className="text-xs text-center">{skill.name}</p>{' '}
+              <p className="text-center p-2">{skill.name}</p>{' '}
               {/* Adjust text size and alignment */}
             </div>
           </div>
